@@ -1,0 +1,252 @@
+/* For Everything */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* For HTML Body */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #c1c1c1;
+}
+
+/* For Main */
+#main {
+    position: relative;
+    overflow: hidden;
+}
+
+/* For Page */
+#page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #c1c1c1;
+}
+
+/* For Page1 */
+#page1 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #c1c1c1;
+}
+
+/* For Page2 */
+#page2 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #c1c1c1;
+}
+
+/* For Page3 */
+#page3 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #c1c1c1;
+}
+
+/* For Canvas */
+canvas {
+    position: relative;
+    z-index: 9;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+#loop {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    height: 20%;
+    width: 100%;
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+#loop>h1 {
+    font-weight: 400;
+    animation-name: anim;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#loop>h1>span {
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+    font-weight: 500;
+}
+
+@keyframes anim {
+    0% {
+        transform: translate(0%);
+    }
+
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+#nav {
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo>h2 {
+    -webkit-text-stroke: 1.3px #000;
+    color: transparent;
+    font-size: 25px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+#logo>h2:hover {
+    color: #000;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    font-size: 25px;
+    color: transparent;
+}
+
+#githubicon {
+    padding-right: 5px;
+}
+
+#lkicon {
+    padding-right: 5px;
+}
+
+#icons>a {
+    color: #5D675B;
+}
+
+#icons>a:hover {
+    color: #000;
+}
+
+/* For page 1 */
+#page1>#left-text {
+    position: absolute;
+    top: 30%;
+    padding: 5%;
+    font-size: large;
+    line-height: 1.5;
+}
+
+/* For page 1 */
+#left-text>h1>span {
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+    font-weight: 400;
+}
+
+/* For page 2 */
+#right-text>h1 {
+    position: absolute;
+    top: 45%;
+    line-height: 1.5;
+    right: 4%;
+}
+
+/* For page 2 */
+#right-text>h1>span {
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+    font-weight: 400;
+}
+
+/* For page 3 Left Side*/
+#left-text3>h1 {
+    position: absolute;
+    top: 40%;
+    line-height: 1.5;
+    left: 4%;
+}
+
+#left-text3>h1>span {
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+    font-weight: 400;
+    padding: 100px;
+}
+
+/* For page 3 Right Side*/
+#right-text3>h1 {
+    position: absolute;
+    line-height: 1.5;
+    left: 65%;
+    top: 33%;
+}
+
+#right-text3>h1>span {
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+    font-weight: 400;
+    padding: 100px;
+}
+
+
+@media (max-width: 500px) {
+    #loop {
+        font-size: 20px;
+    }
+
+    #right-text,
+    #left-text,
+    #left-text3,
+    #right-text3 {
+        display: none;
+    }
+}
+
+@media (max-width: 1400px) {
+    #page1>#left-text {
+        font-size: 13px;
+    }
+
+    #right-text>h1,
+    #right-text3>h1,
+    #left-text3>h1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #page1>#left-text {
+        font-size: 10px;
+    }
+
+    #right-text>h1,
+    #right-text3>h1,
+    #left-text3>h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 850px) {
+    #page1>#left-text {
+        display: none;
+    }
+
+    #right-text>h1,
+    #right-text3>h1,
+    #left-text3>h1 {
+        display: none;
+    }
+}
